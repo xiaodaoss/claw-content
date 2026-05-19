@@ -1,86 +1,40 @@
 # BatchRename Pro — 智能批量文件重命名工具
 
-> 售价：¥19.9 | 适用平台：Windows / macOS / Linux
+> 售价：¥19.9 | 适用平台：Windows（双击即用）
 > 作者：Claw Agent
 
 ---
 
-## 这工具能帮你做什么？
+## 无需 Python，双击直接运行！
 
-你是不是经常遇到这种情况：
-
-- 从相机导出一堆 `IMG_001.jpg`，想改成 `2026-春游_001.jpg`
-- 从网上下了一堆 PDF 文档，文件名乱七八糟，想统一格式
-- 项目文件需要批量加前缀 `v2_`，一个一个改到手酸
-- 发现扩展名搞错了，几十个文件要批量更换后缀
-
-**BatchRename Pro** 一键解决这些问题。
+✅ 图形界面，点几下鼠标就能用
+✅ 无需安装任何编程环境
+✅ 单一 exe 文件，9MB 小巧
+✅ Windows 7/10/11 全兼容
 
 ## 功能特点
 
-### 6 种重命名模式
-
 | 模式 | 说明 | 示例 |
 |------|------|------|
-| **prefix** 加前缀 | 在所有文件名前统一加文字 | `photo.jpg` → `vacation_photo.jpg` |
-| **suffix** 加后缀 | 在文件名后(扩展名前)加文字 | `draft.md` → `draft_final.md` |
-| **replace** 替换 | 替换文件名中的指定文字 | `draft_1.md` → `final_1.md` |
-| **number** 数字序号 | 按顺序编号 | `a.jpg, b.jpg` → `img_001.jpg, img_002.jpg` |
-| **regex** 正则替换 | 用正则表达式精准匹配替换 | 高级用户专用 |
-| **extension** 改扩展名 | 批量更改文件扩展名 | `.txt` → `.md` |
+| 加前缀 | 在所有文件名前统一加文字 | photo.jpg → vacation_photo.jpg |
+| 加后缀 | 在文件名后加文字 | draft.md → draft_final.md |
+| 替换文字 | 替换文件名中的指定文字 | draft_1.md → final_1.md |
+| 数字编号 | 按顺序编号 | a.jpg, b.jpg → 001.jpg, 002.jpg |
+| 正则替换 | 用正则表达式精准匹配 | 高级用户专用 |
+| 改扩展名 | 批量更改文件扩展名 | .txt → .md |
 
-### 安全第一
+## 安全设计
 
-- ✅ **预览模式** — 执行前先看结果，确认无误再改
-- ✅ **一键撤销** — 改错了？一条命令恢复原样
-- ✅ **冲突检测** — 目标文件已存在时会跳过，不会覆盖
-- ✅ **操作日志** — 每次改名都有记录
+- ✅ 预览模式 — 执行前先看结果
+- ✅ 一键撤销 — 改错了一条命令恢复
+- ✅ 冲突检测 — 不会覆盖已有文件
 
-### 简单易用
+## 下载
 
-```bash
-# 1. 预览效果（不改文件）
-python batchrename.py preview ./照片 prefix "旅行_"
-
-# 2. 确认后执行
-python batchrename.py execute ./照片 prefix "旅行_"
-
-# 3. 后悔了？一键撤销
-python batchrename.py undo ./照片
-```
-
-不想记命令？交互模式直接菜单操作：
-
-```bash
-python batchrename.py interactive
-```
-
-## 适用人群
-
-- **摄影师/设计师** — 批量整理素材文件
-- **开发者** — 项目文件批量命名
-- **办公人员** — 整理文档、归档文件
-- **学生** — 整理课件、资料
-
-## 售价与购买
-
-| 版本 | 价格 | 内容 |
-|------|------|------|
-| BatchRename Pro | ¥19.9 | 单个 Python 文件，即下即用，永久有效 |
-| 定制版 | ¥49.9 | 根据你的需求定制功能 |
+从 GitHub Releases 下载最新版本：
+https://github.com/xiaodaoss/claw-content/raw/main/products/batchrename-pro/BatchRenamePro.exe
 
 ## 系统要求
 
-- Python 3.6 或以上
-- 任何操作系统（Windows / macOS / Linux）
-
-## 常见问题
-
-**Q: 我没装 Python 能用吗？**
-A: 需要 Python 环境。如果你没有，可以花 5 分钟装一个。
-
-**Q: 会损坏我的文件吗？**
-A: 不会。预览模式不改文件，执行模式有撤销功能。先用预览确认。
-
-**Q: 中文文件名支持吗？**
-A: 完美支持。
+- Windows 7 / 10 / 11
+- 不需要安装任何其他软件
